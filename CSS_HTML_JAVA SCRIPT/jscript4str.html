@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<title>javascript string program</title>
+</head>
+<body bgcolor="seablue">
+<body>
+
+
+<p>This is first paragraph</p>
+<p>This is second paragraph</p>
+<p id="p1">This is refer paragraph</p>
+
+
+<script type="text/javascript">
+
+var str = 'Hello world';
+
+document.writeln('Length of: ' +str +' = '+str.length);
+
+
+document.writeln('</br>');
+
+var ss1 = str.substr(1,7);
+
+document.writeln('substring1 = ' + ss1);
+
+document.writeln('</br>');
+
+var ss2 = str.substring(1,7);
+
+document.writeln('substring2 = ' + ss2);
+ 
+document.writeln('</br>');
+
+document.writeln('Index of world:'+ str.indexOf('world'));
+
+document.writeln('</br>');
+
+document.writeln('Index of hello:'+ str.lastIndexOf('Hello'));
+
+document.writeln('</br></br>');
+
+
+
+
+var employes = ['shiva','hari','sai','sruji'];
+
+document.writeln('Number of emoloyes:' + employes.length);
+
+document.writeln('</br>');
+
+document.writeln('All employees----->' +employes);
+document.writeln('</br>');
+
+//Inserting an array element
+
+employes.push('srinu');
+
+document.writeln('Number of emoloyes:' + employes.length);
+document.writeln('</br>');
+document.writeln('All employees----->' +employes);
+
+document.writeln('</br>');
+
+//Removeing an array element
+
+employes.pop();
+
+document.writeln('</br>');
+
+document.writeln('Number of employes:' + employes.length);
+document.writeln('</br>');
+document.writeln('All employees----->' +employes);
+document.writeln('</br></br>');
+document.writeln('The employee at the 3rd position: '+employes[3]);
+document.writeln('</br>');
+document.writeln('All employees----->' +employes);
+
+
+
+var x =document.getElementsByTagName["p"];
+
+
+document.getElementById("p1").innerHTML = x[0].innerHTML;
+
+
+
+
+
+</script>
+</body>
+</html>
